@@ -1,0 +1,149 @@
+/*
+Theme Name:    Passion for Coding
+Template:      twentyeleven
+*/
+
+@import url("../twentyeleven/style.css");
+
+#page{
+	margin: 20px auto;
+}
+
+#main{
+	margin-left: 20px;
+	padding-top: 20px;
+}
+
+#site-title{
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+#site-description{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#access div{
+	margin-left: 20px;
+}
+
+.singular .entry-meta .edit-link a{
+	left: 0px;
+	top: 25px;
+}
+
+#content
+{
+    width: 100%;
+    margin: 0px;
+}
+
+#primary
+{
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px !important;
+    /*max-width: 728px;*/
+    max-width: 690px;
+}
+
+#secondary
+{
+    width: auto;
+    margin: 0px 0px 20px 0px;
+    float: none;
+}
+
+#secondary aside
+{
+	width: 250px;
+	/*width: 212px;*/
+	float: left;
+	margin: 0 20px 20px 0;
+	clear: right;
+}
+
+.widget img{
+	max-width: 100%;
+}
+
+.singular .hentry{
+	padding-top: 0;
+}
+
+nav#nav-single{
+	width: 300px; 
+	padding-bottom: 0.5em;
+}
+
+#nav-bottom{
+	margin: 0 auto 0 auto;
+	/*width: 728px;*/
+	width: 690px;
+}
+
+#nav-bottom span{
+	padding-bottom: 2em;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 2.2em;
+}
+
+#nav-bottom span.meta-nav{
+	font-weight: normal;
+}
+
+.singular #content{
+	margin: 0 0;
+}
+
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title {
+	margin: 0 auto;
+	width: 100%;
+}
+.single .entry-content
+{
+	/*width: 63.4%;*/
+	padding-top: 0;
+}
+
+
+#ad-left{
+	float: left;
+	margin-left: -200px;
+	position: fixed;
+	top: 20px;
+}
+
+#ad-below, #ad-above{
+	margin: 0px auto 1em;
+	width: 728px;
+}
+
+div.dummy-ad{
+	width: 468px;
+	height: 15px;
+	border-style: dotted;
+	border-color: gray;
+	border-width: 1px;
+}
+
+div.entry-content h1, div.entry-content h2{
+	clear: right;
+	
+}
+
+#branding hgroup
+{
+	margin-left: 20px;    
+}
+
+#respond{
+	width: auto;
+}
+
+.commentlist{
+	width: auto;
+	margin-left: 102px;
+}
