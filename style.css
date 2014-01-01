@@ -12,6 +12,12 @@ body
 .post-list h1.entry-title
 {
     font-size:  36px;
+    color:  rgb(51, 51, 51);
+}
+
+.entry-header a:hover
+{
+    text-decoration: none;
 }
 
 .post-list h1
@@ -37,4 +43,17 @@ body
 .post-list h5
 {
     font-size:  12px;
+}
+
+article
+{
+    margin-top:  30px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom:  10px;
+    margin-bottom: 15px;
+}
+
+.entry-header
+{
+    margin-bottom: 10px;
 }
