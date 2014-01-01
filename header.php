@@ -60,6 +60,14 @@
                                 'walker' => new Bootstrap_Walker_Nav_Menu() )
                                 );
                 ?>
+                <div class="navbar-right">
+                    <a class="navbar-custom-button" href="https://plus.google.com/+AndersAbel" rel="publisher" target="_blank">
+                        <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" />
+                    </a>
+                    <a class="navbar-custom-button email-button" href="mailto:anders@abel.nu">&nbsp;</a>
+                    <a class="navbar-custom-button twitter-follow-button" href="https://twitter.com/anders_abel" target="_blank">&nbsp;</a>
+                    <a class="navbar-custom-button rss-button" href="<?php bloginfo('rss2_url'); ?>">&nbsp;</a>
+                </div>
             </div>
         </nav>
 

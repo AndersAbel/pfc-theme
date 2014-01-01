@@ -4,55 +4,95 @@ Author: Anders Abel
 Author URI: http://coding.abel.nu/
 */
 
-body
-{
-    padding-top:  70px;    
+/* Fix header sizes on blog list */
+.post-list h1.entry-title {
+    font-size: 36px;
+    color: rgb(51, 51, 51);
 }
 
-.post-list h1.entry-title
-{
-    font-size:  36px;
-    color:  rgb(51, 51, 51);
-}
-
-.entry-header a:hover
-{
+.entry-header a:hover {
     text-decoration: none;
 }
 
-.post-list h1
-{
-    font-size:  30px;    
+.post-list h1 {
+    font-size: 30px;
 }
 
-.post-list h2
-{
+.post-list h2 {
     font-size: 24px;
 }
 
-.post-list h3
-{
-    font-size:  18px;    
+.post-list h3 {
+    font-size: 18px;
 }
 
-.post-list h4
-{
-    font-size:  14px;
+.post-list h4 {
+    font-size: 14px;
 }
 
-.post-list h5
-{
-    font-size:  12px;
+.post-list h5 {
+    font-size: 12px;
 }
 
-article
-{
+/* Styling for articles */
+
+article {
     border-bottom: 1px solid #eeeeee;
-    padding-bottom:  10px;
+    padding-bottom: 10px;
     margin-bottom: 45px;
 }
 
-.entry-header
-{
+.entry-header {
     margin-bottom: 10px;
 }
+
+/* The navbar */
+body {
+    padding-top: 70px;
+}
+
+.navbar-custom-button {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 50px;
+    display: block;
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar-custom-button {
+        margin-top: 9px;
+        margin-bottom: 0px;
+    }
+}
+
+.twitter-follow-button {
+    background-image: url('images/twitter.png');
+    margin-left: 16px;
+}
+
+.rss-button {
+    background-image: url('images/rss.png');
+    margin-left: 16px;
+}
+
+.email-button {
+    background-image: url('images/email.png');
+    margin-left: 16px;
+}
+
+/* Remove extra padding */
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
