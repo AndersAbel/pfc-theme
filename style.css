@@ -8,3 +8,33 @@ body
 {
     padding-top:  70px;    
 }
+
+.post-list h1.entry-title
+{
+    font-size:  36px;
+}
+
+.post-list h1
+{
+    font-size:  30px;    
+}
+
+.post-list h2
+{
+    font-size: 24px;
+}
+
+.post-list h3
+{
+    font-size:  18px;    
+}
+
+.post-list h4
+{
+    font-size:  14px;
+}
+
+.post-list h5
+{
+    font-size:  12px;
+}
