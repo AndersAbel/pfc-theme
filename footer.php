@@ -3,5 +3,6 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 	</div><!-- main -->
+  <?php wp_footer(); ?>
   </body>
 </html>
