@@ -1,0 +1,2 @@
+* Stäng av addthis.
+* Ta bort Home från menyn.
