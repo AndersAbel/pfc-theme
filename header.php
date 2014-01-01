@@ -1,7 +1,15 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title><?php
+	global $page, $paged;
+	wp_title( '|', true, 'right');
+	bloginfo('name');
+
+	if ( $paged >= 2 || $page >= 2)
+		echo ' | ' . sprintf('Page %s', max( $paged, $page) );
+	?></title>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
