@@ -3,3 +3,8 @@ Theme Name: Passion for Coding
 Author: Anders Abel
 Author URI: http://coding.abel.nu/
 */
+
+body
+{
+    padding-top:  70px;    
+}
