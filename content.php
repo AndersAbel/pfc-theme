@@ -11,7 +11,12 @@
             </div>
         </div>
     </header>
-    <?php the_content('Continue Reading &rarr;'); ?>
+    <?php the_content(''); ?>
+    <?php if ( ! is_single() ): ?>
+        <ul class="pager">
+            <li class="next"><a href="<?php the_permalink(); echo '#more-' . get_the_id(); ?>">Continue Reading &rarr;</a></li>
+        </ul>
+    <?php endif;?>
     <?php if (! is_page() ): ?>
         <footer class="entry-meta small">
             Posted in 
