@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
 <div id="primary" class="col-md-8 <?php echo is_single() ? '' : 'post-list' ?>">
+    <?php if ( !is_single() && get_previous_posts_link() ): ?>
+        <ul class="pager">
+            <li class="previous"><?php next_posts_link('&larr; Older Posts'); ?></li>
+            <li class="next"><?php previous_posts_link('Newer Posts &rarr;')?></li>
+        </ul>
+    <?php endif;?>
+
     <?php while( have_posts() ) :
             the_post();  
             get_template_part("pager");
