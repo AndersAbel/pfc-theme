@@ -127,6 +127,7 @@ article .alignright{
 article img{
     border:  1px solid #ddd;
     padding:  5px;
+    box-sizing:  content-box;
 }
 
 article .wp-caption{
