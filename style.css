@@ -46,6 +46,9 @@ h1.entry-title{
 article {
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
+}
+
+.post-list article{
     margin-bottom: 45px;
 }
 
