@@ -6,11 +6,13 @@
         </div>
     </header>
     <?php the_content('Continue Reading &rarr;'); ?>
-    <footer class="entry-meta">
-        Posted in 
-        <?php 
-            echo get_the_category_list(', ');
-            echo get_the_tag_list(' | Tagged ', ', '); 
-        ?>
-    </footer>
+    <?php if (! is_page() ): ?>
+        <footer class="entry-meta">
+            Posted in 
+            <?php 
+                echo get_the_category_list(', ');
+                echo get_the_tag_list(' | Tagged ', ', '); 
+            ?>
+        </footer>
+    <?php endif; ?>
 </article>
