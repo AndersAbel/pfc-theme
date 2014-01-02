@@ -1,6 +1,8 @@
 <?php
 
-// From https://gist.github.com/johnmegahan/1597994 
+/* A menu nav walker compatbile with bootstrap.
+ * From https://gist.github.com/johnmegahan/1597994
+ */
 add_action( 'after_setup_theme', 'bootstrap_setup' );
  
 if ( ! function_exists( 'bootstrap_setup' ) ):
@@ -110,9 +112,26 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
  
 endif;
 
+/* Make lead text of the first paragraph of each post.
+ */
 function first_paragraph($content){
 	return preg_replace('/<p([^>]+)?>/', '<p$1 class="lead">', $content, 1);
 }
 add_filter('the_content', 'first_paragraph');
 
+/*
+ * Register our sidebars and widgetized areas.
+ */
+function pfc_widgets_init() {
+
+	register_sidebars(2, array(
+		'name' => 'Sidebar %d',
+		'id' => 'sidebar',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'pfc_widgets_init' );
 ?>

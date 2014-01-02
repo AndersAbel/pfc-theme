@@ -8,6 +8,7 @@ Author URI: http://coding.abel.nu/
 .post-list h1.entry-title {
     font-size: 36px;
     color: rgb(51, 51, 51);
+    margin-top:  0px;
 }
 
 .entry-header a:hover {
@@ -46,9 +47,17 @@ article {
     margin-bottom: 10px;
 }
 
-/* The navbar */
+/* The navbar and basic layout*/
 body {
-    padding-top: 70px;
+    padding-top: 50px;
+    background:  #eeeeee;
+}
+
+#wrapper{
+    background:  white;
+    padding-top:  20px;
+    margin-bottom:  20px;
+    padding-bottom:  20px;
 }
 
 .navbar-custom-button {
@@ -85,7 +94,7 @@ body {
     margin-left: 16px;
 }
 
-/* Remove extra padding */
+/* Remove extra padding 
 .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -96,3 +105,10 @@ body {
     padding-right: 15px;
 }
 
+*/
+
+.license-image
+{
+    margin-right:  10px;
+    margin-top:  5px;
+}
