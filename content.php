@@ -15,10 +15,11 @@
     </header>
     <?php the_content('Continue Reading &rarr;'); ?>
     <?php if (! is_page() ): ?>
-        <footer class="entry-meta">
+        <footer class="entry-meta small">
             Posted in 
             <?php 
                 echo get_the_category_list(', ');
+                echo ' on ' . get_the_date('Y-m-d');
                 echo get_the_tag_list(' | Tagged ', ', ');
             ?>
         </footer>
