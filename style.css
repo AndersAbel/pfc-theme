@@ -62,6 +62,10 @@ body {
     background:  #eeeeee;
 }
 
+.navbar-fixed-top{
+    padding-top:  32px;
+}
+
 #wrapper{
     background:  white;
     padding-top:  20px;

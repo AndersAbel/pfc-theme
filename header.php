@@ -39,7 +39,7 @@
             wp_head();
         ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <nav class="navbar navbar-default navbar-fixed-top container navbar-inverse" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
