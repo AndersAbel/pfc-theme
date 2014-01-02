@@ -113,5 +113,6 @@ article .alignleft{
 }
 
 .share-buttons{
-    max-height:  30px;
+    height:  25px;
+    max-height:  25px;
 }
