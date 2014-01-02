@@ -27,5 +27,8 @@
             ?>
         </footer>
     <?php endif; 
-    comments_template( '', true ); ?>
+    if(is_single()){
+        get_template_part('pager');
+        comments_template( '', true ); 
+    }?>
 </article>

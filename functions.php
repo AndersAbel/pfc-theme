@@ -141,6 +141,9 @@ function list_comments($comment, $args, $depth){ ?>
             <div class="pull-right"><?php echo get_avatar($comment); ?></div>
             <h4><?php comment_author_link(); ?> <small>on <?php comment_date('Y-m-d') ?></small></h4>
             <p><?php comment_text() ?></p>
+            <?php if ($comment->comment_approved == '0') : ?>
+                <div class="alert alert-info">Your comment is awaiting moderation.</div>
+            <?php endif; ?>
         </div>
     </li>
 <?php
