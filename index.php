@@ -8,14 +8,14 @@
         </ul>
     <?php endif;?>
 
-    <?php while( have_posts() ) :
+    <?php while( have_posts() ) {
             the_post();  
-            get_template_part("pager");
-            get_template_part("content");
-            get_template_part("pager");
-          endwhile; ?>
+            get_template_part('pager');
+            get_template_part('content');
+            get_template_part('pager');
+          }
 
-    <?php if(! is_single() ) : ?>
+        if(! is_single() ) : ?>
         <ul class="pager">
             <li class="previous"><?php next_posts_link('&larr; Older Posts'); ?></li>
             <li class="next"><?php previous_posts_link('Newer Posts &rarr;')?></li>
