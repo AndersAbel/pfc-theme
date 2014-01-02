@@ -148,7 +148,7 @@ function list_comments($comment, $args, $depth){ ?>
 
 function list_pings($comment, $args, $depth){ ?>
     <li class="list-group-item">
-        Pingback: <?php comment_author_link(); ?>
+        Pingback: <?php comment_author_link(); ?> on <?php comment_date('Y-m-d') ?>
     </li>
 <?php
 }
