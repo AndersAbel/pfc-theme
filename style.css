@@ -4,11 +4,17 @@ Author: Anders Abel
 Author URI: http://coding.abel.nu/
 */
 
+h1.entry-title{
+    font-size: 40px;
+    font-weight:  bold;
+    color: rgb(51, 51, 51);
+    margin-top:  0px;
+}
+
 /* Fix header sizes on blog list */
 .post-list h1.entry-title {
     font-size: 36px;
-    color: rgb(51, 51, 51);
-    margin-top:  0px;
+    font-weight:  500;
 }
 
 .entry-header a:hover {
@@ -93,19 +99,6 @@ body {
     background-image: url('images/email.png');
     margin-left: 16px;
 }
-
-/* Remove extra padding 
-.container {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.navbar {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-*/
 
 .license-image
 {
