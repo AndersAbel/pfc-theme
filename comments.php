@@ -1,5 +1,5 @@
-<div id="#comments">
-    <ul class="commentlist list-group">
+<div id="comments">
+    <ul id="commentlist" class="list-group">
         <?php wp_list_comments('type=pings&callback=list_pings')?>
         <?php wp_list_comments('type=comment&callback=list_comments'); ?>
         <?php if ( comments_open()): ?>
@@ -26,8 +26,15 @@
                     <textarea rows="10" name="comment" class="form-control" placeholder="Praise or bash the post!" required></textarea>
                 </div>
                 <input type="hidden" name="comment_post_ID" value="<?php the_ID(); ?>"/>
+                <input type="hidden" id="comment_parent" name="comment_parent" />
                 <button name="submit "class="btn btn-primary">Submit</button>
+                <button type="button" class="cancel-reply btn btn-warning" style="display: none">Cancel</button>
             </form>
+        </li>
+        <li class="list-group-item cancel-reply" style="display: none">
+            <div class="alert alert-info">You're currently writing a reply to an existing comment, so the comment form is busy elsewhere. To make a new
+            comment (which isn't a reply to an existing ocmment), you have to cancel that reply.</div>
+            <button type="button" class="cancel-reply btn btn-warning">Cancel the reply and give me the comment form back!</button>
         </li>
         <?php endif; ?>
     </ul>

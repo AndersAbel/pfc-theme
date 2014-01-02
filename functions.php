@@ -136,10 +136,15 @@ function pfc_widgets_init() {
 add_action( 'widgets_init', 'pfc_widgets_init' );
     
 function list_comments($comment, $args, $depth){ ?>
-    <li class="list-group-item" id="comment-<?php comment_ID() ?>">
+    <li class="list-group-item" data-comment-id="<?php comment_ID() ?>">
         <div class="comment-container">
             <div class="pull-right"><?php echo get_avatar($comment); ?></div>
-            <h4><?php comment_author_link(); ?> <small>on <?php comment_date('Y-m-d') ?></small></h4>
+            <h4><?php comment_author_link(); ?> <small>on <?php comment_date('Y-m-d') ?></small>
+            <?php if(comments_open() && $depth < $args['max_depth']) :?>
+                <button class="reply-to-comment btn btn-default" type="button">Reply</button>
+            <?php endif; ?>
+            </h4>
+            
             <p><?php comment_text() ?></p>
             <?php if ($comment->comment_approved == '0') : ?>
                 <div class="alert alert-info">Your comment is awaiting moderation.</div>
