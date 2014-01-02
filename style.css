@@ -119,6 +119,61 @@ article .alignleft{
     margin-right: 5px;
 }
 
+article .alignright{
+    float:  right;
+    margin-left:  5px;
+}
+
+article img{
+    border:  1px solid #ddd;
+    padding:  5px;
+}
+
+article .wp-caption{
+    margin-top:  15px;
+    margin-bottom:  25px;
+}
+
+article .wp-caption-text{
+    float:  right;
+    margin-right:  10px;
+    font-weight:  bold;
+    font-size:  0.8em;
+}
+
+article .wp_syntax table td.line_numbers pre {
+    width:  auto !important;
+}
+
+/* Tables in articles. Bootstrap doesn't autostyle all tables, only those with a .table 
+ * class - which is not the case in my  posts :-( 
+ */
+article table{
+    width:  100%;
+    margin-bottom:  15px;
+}
+
+article table>thead{
+    vertical-align: bottom;
+    border-bottom:  2px solid #ddd;
+}
+
+article table>tbody>tr{
+    border-bottom:  1px solid #ddd;
+}
+
+article table>tbody>tr:nth-child(odd){
+    background-color:  #f9f9f9;    
+}
+
+article .seriesbox h2{
+    margin-top:  0px;
+}
+
+article .seriesbox{
+    font-size:  1em;
+}
+
 .share-buttons{
     height:  25px;
     max-height:  25px;
