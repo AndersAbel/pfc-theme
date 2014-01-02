@@ -178,3 +178,8 @@ article .seriesbox{
     height:  25px;
     max-height:  25px;
 }
+
+/* Comments */
+.comment-container{
+    min-height:  100px;
+}

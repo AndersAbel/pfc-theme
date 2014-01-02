@@ -26,5 +26,6 @@
                 echo get_the_tag_list(' | Tagged ', ', ');
             ?>
         </footer>
-    <?php endif; ?>
+    <?php endif; 
+    comments_template( '', true ); ?>
 </article>
