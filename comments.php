@@ -33,7 +33,7 @@
         </li>
         <li class="list-group-item cancel-reply" style="display: none">
             <div class="alert alert-info">You're currently writing a reply to an existing comment, so the comment form is busy elsewhere. To make a new
-            comment (which isn't a reply to an existing ocmment), you have to cancel that reply.</div>
+            comment (that isn't a reply to an existing ocmment), you have to cancel that reply.</div>
             <button type="button" class="cancel-reply btn btn-warning">Cancel the reply and give me the comment form back!</button>
         </li>
         <?php endif; ?>
