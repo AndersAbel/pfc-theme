@@ -7,6 +7,14 @@
             get_template_part("content");
             get_template_part("pager");
           endwhile; ?>
+
+    <?php if(! is_single() ) : ?>
+        <ul class="pager">
+            <li class="previous"><?php next_posts_link('&larr; Older Posts'); ?></li>
+            <li class="next"><?php previous_posts_link('Newer Posts &rarr;')?></li>
+        </ul>
+    <?php endif;?>
 </div>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
