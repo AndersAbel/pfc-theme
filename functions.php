@@ -129,8 +129,8 @@ function pfc_widgets_init() {
 		'id' => 'sidebar',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<h2>',
-		'after_title' => '</h2>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'pfc_widgets_init' );
