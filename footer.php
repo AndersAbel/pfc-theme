@@ -1,5 +1,5 @@
         </div><!-- row -->	
-        <div class="row">
+        <div id="site-footer" class="row">
             <div class="col-sm-6">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img class="pull-left license-image" alt="Creative Commons-licens" 
                     src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/></a> All posts and pages on this blog are licensed under 
