@@ -32,6 +32,7 @@
     </script>
     <!-- Adsense -->
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <?php if(! is_user_logged_in() ): ?>
     <!-- Google analytics -->
     <script type="text/javascript">
 
@@ -46,6 +47,8 @@
       })();
 
     </script>
-    <?php wp_footer(); ?>
+    <?php 
+    endif;
+    wp_footer(); ?>
   </body>
 </html>
