@@ -1,4 +1,0 @@
-* Stäng av addthis.
-* Ta bort Home från menyn.
-* Ta bort social-media-grejer från sidebar.
-* Städa upp widgets.

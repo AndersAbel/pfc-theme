@@ -9,6 +9,8 @@ if ( ! function_exists( 'bootstrap_setup' ) ):
  
 	function bootstrap_setup(){
  
+    	add_theme_support( 'automatic-feed-links' );
+
 		add_action( 'init', 'register_menu' );
 			
 		function register_menu(){
