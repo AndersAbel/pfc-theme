@@ -12,7 +12,7 @@
         </div>
     </header>
     <?php the_content(''); ?>
-    <?php if ( ! is_single() ): ?>
+    <?php if ( ! is_singular() ): ?>
         <ul class="pager">
             <li class="next"><a href="<?php the_permalink(); echo '#more-' . get_the_id(); ?>">Continue Reading &rarr;</a></li>
         </ul>
@@ -27,8 +27,18 @@
             ?>
         </footer>
     <?php endif; 
-    if(is_single()){
+    if(is_single()) : ?>
+        <!-- Below Post - Responsive -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8682707145421648"
+             data-ad-slot="9185849256"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    <?php 
         get_template_part('pager');
         comments_template( '', true ); 
-    }?>
+    endif; ?>
 </article>
