@@ -162,4 +162,17 @@ function list_pings($comment, $args, $depth){ ?>
     </li>
 <?php
 }
+
+// Settings menu
+function setup_pfc_theme_admin_menus(){
+    add_submenu_page('themes.php',
+    'Passion for Coding Theme Settings', 'PFC Settings', 'manage_options',
+    'pfc-settings', 'passion_for_coding_settings');
+}
+
+add_action("admin_menu", "setup_pfc_theme_admin_menus");
+
+function passion_for_coding_settings(){
+    get_template_part('settings');
+}
 ?>
