@@ -18,6 +18,15 @@
 
         $twitter_name = $_POST["twitter-name"];
         update_option("pfc_theme_twitter_name", $twitter_name);
+
+        $ad_above_post = $_POST["ad-above-post"];
+        update_option("pfc_theme_ad_above_post", $ad_above_post);
+
+        $ad_below_post = $_POST["ad-below-post"];
+        update_option("pfc_theme_ad_below_post", $ad_below_post);
+
+        $ad_in_listing = $_POST["ad-in-listing"];
+        update_option("pfc_theme_ad_in_listing", $ad_in_listing);
 ?>
 <div class="updated"><p>Settings saved</p></div>
 <?php
@@ -26,6 +35,9 @@
         $google_plus_profile = get_option("pfc_theme_google_plus_profile");
         $public_email = get_option("pfc_theme_public_email");
         $twitter_name = get_option("pfc_theme_twitter_name");
+        $ad_above_post = get_option("pfc_theme_ad_above_post");
+        $ad_below_post = get_option("pfc_theme_ad_below_post");
+        $ad_in_listing = get_option("pfc_theme_ad_in_listing");
     endif;
 ?>
 <form method="POST" action="">
@@ -54,6 +66,18 @@
                 value="<?php echo $twitter_name; ?>" /></td>
         </tr>
         </tbody>
+        <tr>
+            <th><label for="ad-above-post">Adsense Above Blog Post or Listing:</label></th>
+            <td><textarea id="ad-above-post" name="ad-above-post" cols="80" rows="10"><?php echo $ad_above_post; ?></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="ad-below-post">Adsense Below Blog Post:</label></th>
+            <td><textarea id="ad-below-post" name="ad-below-post" cols="80" rows="10"><?php echo $ad_below_post; ?></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="ad-in-listing">Adsense In Post Listing:</label></th>
+            <td><textarea id="ad-in-listing" name="ad-in-listing" cols="80" rows="10"><?php echo $ad_in_listing; ?></textarea></td>
+        </tr>
     </table>
     <p>
         <button value="save-settings" name="save-settings" class="button-primary">Save Settings</button>
