@@ -7,7 +7,7 @@
 
 <?php
     if(isset($_POST["save-settings"])):
-        $custom_head_content = $_POST["custom-head-content"];
+        $custom_head_content = stripslashes($_POST["custom-head-content"]);
         update_option("pfc_theme_custom_head_content", $custom_head_content);
 
         $google_plus_profile = $_POST["google-plus-profile"];
@@ -19,14 +19,17 @@
         $twitter_name = $_POST["twitter-name"];
         update_option("pfc_theme_twitter_name", $twitter_name);
 
-        $ad_above_post = $_POST["ad-above-post"];
+        $ad_above_post = stripslashes($_POST["ad-above-post"]);
         update_option("pfc_theme_ad_above_post", $ad_above_post);
 
-        $ad_below_post = $_POST["ad-below-post"];
+        $ad_below_post = stripslashes($_POST["ad-below-post"]);
         update_option("pfc_theme_ad_below_post", $ad_below_post);
 
-        $ad_in_listing = $_POST["ad-in-listing"];
+        $ad_in_listing = stripslashes($_POST["ad-in-listing"]);
         update_option("pfc_theme_ad_in_listing", $ad_in_listing);
+
+        $ad_sidebar = stripslashes($_POST["ad-sidebar"]);
+        update_option("pfc_theme_ad_sidebar", $ad_sidebar);
 ?>
 <div class="updated"><p>Settings saved</p></div>
 <?php
@@ -38,6 +41,7 @@
         $ad_above_post = get_option("pfc_theme_ad_above_post");
         $ad_below_post = get_option("pfc_theme_ad_below_post");
         $ad_in_listing = get_option("pfc_theme_ad_in_listing");
+        $ad_sidebar = get_option("pfc_theme_ad_sidebar");
     endif;
 ?>
 <form method="POST" action="">
@@ -77,6 +81,10 @@
         <tr>
             <th><label for="ad-in-listing">Adsense In Post Listing:</label></th>
             <td><textarea id="ad-in-listing" name="ad-in-listing" cols="80" rows="10"><?php echo $ad_in_listing; ?></textarea></td>
+        </tr>
+        <tr>
+            <th><label for="ad-sidebar">Adsense In Sidebar:</label></th>
+            <td><textarea id="ad-sidebar" name="ad-sidebar" cols="80" rows="10"><?php echo $ad_sidebar; ?></textarea></td>
         </tr>
     </table>
     <p>
