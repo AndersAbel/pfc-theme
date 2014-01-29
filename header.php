@@ -30,9 +30,10 @@
              */
             wp_head();
         ?>
-        <?php if(! is_user_logged_in() ): ?>
-        <?php echo get_options("pfc_theme_custom_head_content");?>
-    <?php endif; ?>
+        <?php if(! is_user_logged_in() ) {
+           echo get_option("pfc_theme_custom_head_content");
+        }
+        ?>
     </head>
     <body <?php body_class(); ?>>
         <nav class="navbar navbar-default navbar-fixed-top container navbar-inverse" role="navigation">
