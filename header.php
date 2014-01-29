@@ -31,17 +31,7 @@
             wp_head();
         ?>
         <?php if(! is_user_logged_in() ): ?>
-        <!-- Google analytics -->
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-29041594-1', 'abel.nu');
-          ga('send', 'pageview');
-
-        </script>
+        <?php echo get_options("pfc_theme_custom_head_content");?>
     <?php endif; ?>
     </head>
     <body <?php body_class(); ?>>
@@ -66,11 +56,11 @@
                                 );
                 ?>
                 <div class="navbar-right">
-                    <a class="navbar-custom-button" href="https://plus.google.com/+AndersAbel" rel="publisher" target="_blank">
+                    <a class="navbar-custom-button" href="<?php echo get_option("pfc_theme_google_plus_profile"); ?>" rel="publisher" target="_blank">
                         <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" />
                     </a>
-                    <a class="navbar-custom-button email-button" href="mailto:anders@abel.nu">&nbsp;</a>
-                    <a class="navbar-custom-button my-twitter-follow-button" href="https://twitter.com/anders_abel" target="_blank">&nbsp;</a>
+                    <a class="navbar-custom-button email-button" href="mailto:<?php get_option("pfc_theme_public_email"); ?>">&nbsp;</a>
+                    <a class="navbar-custom-button my-twitter-follow-button" href="https://twitter.com/<?php get_option("pfc_theme_twitter_name");?>" target="_blank">&nbsp;</a>
                     <a class="navbar-custom-button rss-button" href="<?php bloginfo('rss2_url'); ?>">&nbsp;</a>
                 </div>
             </div>

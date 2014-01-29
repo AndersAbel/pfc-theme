@@ -3,7 +3,7 @@
         <a href="<?php the_permalink(); ?>"><h1 class="entry-title"><?php the_title(); ?></h1></a>
         <div class="row share-buttons">
             <div class="share-buttons col-sm-6">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-via="anders_abel" data-url="<?php the_permalink(); ?>">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo get_option("pfc_theme_twitter_name");?>" data-url="<?php the_permalink(); ?>">Tweet</a>
                 <div class="g-plus" data-action="share" data-annotation="bubble" data-href="<?php the_permalink(); ?>"></div>
             </div>
             <div class="entry-meta small text-right col-sm-6">
@@ -28,15 +28,7 @@
         </footer>
     <?php endif; 
     if(is_single()) : ?>
-        <!-- Below Post - Responsive -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-8682707145421648"
-             data-ad-slot="9185849256"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <?php echo get_option("pfc_theme_ad_below_post"); ?>
     <?php 
         get_template_part('pager');
         comments_template( '', true ); 
