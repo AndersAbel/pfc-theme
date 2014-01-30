@@ -10,6 +10,9 @@
                 src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /></a> All original code samples (those that are not 
             quoted with another source) are placed in the <a href="http://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</div>
             </div>
+            <div class="text-center small">
+                Powered by <a href="www.wordpress.org" target="_blank">WordPress</a> with the <a href="https://github.com/AndersAbel/pfc-theme" target="_blank">Passion for Coding theme.</a>
+            </div>
         </div>
     </div><!-- main -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
