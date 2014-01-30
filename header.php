@@ -60,8 +60,8 @@
                     <a class="navbar-custom-button" href="<?php echo get_option("pfc_theme_google_plus_profile"); ?>" rel="publisher" target="_blank">
                         <img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" />
                     </a>
-                    <a class="navbar-custom-button email-button" href="mailto:<?php get_option("pfc_theme_public_email"); ?>">&nbsp;</a>
-                    <a class="navbar-custom-button my-twitter-follow-button" href="https://twitter.com/<?php get_option("pfc_theme_twitter_name");?>" target="_blank">&nbsp;</a>
+                    <a class="navbar-custom-button email-button" href="mailto:<?php echo get_option("pfc_theme_public_email"); ?>">&nbsp;</a>
+                    <a class="navbar-custom-button my-twitter-follow-button" href="https://twitter.com/<?php echo get_option("pfc_theme_twitter_name");?>" target="_blank">&nbsp;</a>
                     <a class="navbar-custom-button rss-button" href="<?php bloginfo('rss2_url'); ?>">&nbsp;</a>
                 </div>
             </div>
