@@ -138,7 +138,7 @@ function pfc_widgets_init() {
 add_action( 'widgets_init', 'pfc_widgets_init' );
     
 function list_comments($comment, $args, $depth){ ?>
-    <li class="list-group-item" data-comment-id="<?php comment_ID() ?>">
+    <li class="list-group-item" id="comment-<?php comment_ID(); ?>" data-comment-id="<?php comment_ID(); ?>">
         <div class="comment-container">
             <div class="pull-right"><?php echo get_avatar($comment); ?></div>
             <h4><?php comment_author_link(); ?> <small>on <?php comment_date('Y-m-d') ?></small>
