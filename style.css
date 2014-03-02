@@ -196,6 +196,10 @@ article .seriesbox{
     min-height:  100px;
 }
 
+#comments{
+    margin-top: 15px;
+}
+
 #site-footer{
     border-top:  2px solid #ddd;
 }

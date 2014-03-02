@@ -27,10 +27,10 @@
             ?>
         </footer>
     <?php endif; 
+    get_template_part('pager');
     if(is_single()) : ?>
         <?php echo get_option("pfc_theme_ad_below_post"); ?>
     <?php 
-        get_template_part('pager');
         comments_template( '', true ); 
     endif; ?>
 </article>
