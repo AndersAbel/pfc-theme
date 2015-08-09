@@ -2,12 +2,12 @@
         <div id="site-footer" class="row">
             <div class="col-sm-6">
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img class="pull-left license-image" alt="Creative Commons-licens" 
-                    src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"/></a> All posts and pages on this blog are licensed under 
+                    src="https://licensebuttons.net/l/by-sa/3.0/88x31.png"/></a> All posts and pages on this blog are licensed under 
                 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike license</a>
             </div>
             <div class="col-sm-6">
             <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img class="pull-left license-image" 
-                src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" /></a> All original code samples (those that are not 
+                src="https://licensebuttons.net/p/zero/1.0/88x31.png" alt="CC0" /></a> All original code samples (those that are not 
             quoted with another source) are placed in the <a href="http://creativecommons.org/publicdomain/zero/1.0/">public domain</a>.</div>
             </div>
             <div class="text-center small">
