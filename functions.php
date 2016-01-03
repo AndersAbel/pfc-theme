@@ -175,4 +175,6 @@ add_action("admin_menu", "setup_pfc_theme_admin_menus");
 function passion_for_coding_settings(){
     get_template_part('settings');
 }
+
+add_theme_support( 'post-thumbnails' ); 
 ?>

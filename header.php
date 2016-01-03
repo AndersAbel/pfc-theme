@@ -21,6 +21,25 @@
                     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
                     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
                     <![endif]-->
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="<?php echo "@" . get_option("pfc_theme_twitter_name");?>" />
+	<?php if( is_single() ) : ?>
+	<meta name="twitter:title" content="<?php echo ltrim(wp_title('', false)); ?>" />
+	<meta name="twitter:description" content="<?php setup_postdata($post); echo wp_trim_words(get_the_excerpt(), 55, ''); ?>" />
+	<meta name="twitter:image" content="<?php if ( has_post_thumbnail() ) {
+		echo the_post_thumbnail_url();
+	}
+	else
+	{
+		echo get_option("pfc_theme_twitter_default_image");
+	} ?>" />
+	<?php else: ?>
+	<meta name="twitter:title" content="<?php bloginfo('name') ?>" />
+	<meta name="twitter:description" content="<?php bloginfo( 'description'); ?>" />
+	<meta name="twitter:image" content="<?php echo get_option("pfc_theme_twitter_default_image"); ?>" />
+	<?php endif; ?>
+
         <?php
             /*
              * Always have wp_head() just before the closing </head>

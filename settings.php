@@ -19,6 +19,9 @@
         $twitter_name = $_POST["twitter-name"];
         update_option("pfc_theme_twitter_name", $twitter_name);
 
+        $twitter_default_image = $_POST["twitter-default-image"];
+        update_option("pfc_theme_twitter_default_image", $twitter_default_image);
+
         $ad_above_post = stripslashes($_POST["ad-above-post"]);
         update_option("pfc_theme_ad_above_post", $ad_above_post);
 
@@ -38,6 +41,7 @@
         $google_plus_profile = get_option("pfc_theme_google_plus_profile");
         $public_email = get_option("pfc_theme_public_email");
         $twitter_name = get_option("pfc_theme_twitter_name");
+	$twitter_default_image = get_option("pfc_theme_twitter_default_image");
         $ad_above_post = get_option("pfc_theme_ad_above_post");
         $ad_below_post = get_option("pfc_theme_ad_below_post");
         $ad_in_listing = get_option("pfc_theme_ad_in_listing");
@@ -69,7 +73,11 @@
             <td><input type="text" id="twitter-name" name="twitter-name" class="regular-text code" title="The twitter account name (without @)" 
                 value="<?php echo $twitter_name; ?>" /></td>
         </tr>
-        </tbody>
+        <tr>
+            <th><label for="twitter-default-image">Default twitter card image:</label></th>
+            <td><input type="text" id="twitter-default-image" name="twitter-default-image" class="regular-text code" title="Full URL to default twitter card image." 
+                value="<?php echo $twitter_default_image; ?>" /></td>
+        </tr>
         <tr>
             <th><label for="ad-above-post">Adsense Above Blog Post or Listing:</label></th>
             <td><textarea id="ad-above-post" name="ad-above-post" cols="80" rows="10"><?php echo $ad_above_post; ?></textarea></td>
@@ -86,11 +94,10 @@
             <th><label for="ad-sidebar">Adsense In Sidebar:</label></th>
             <td><textarea id="ad-sidebar" name="ad-sidebar" cols="80" rows="10"><?php echo $ad_sidebar; ?></textarea></td>
         </tr>
+	</tbody>
     </table>
     <p>
         <button value="save-settings" name="save-settings" class="button-primary">Save Settings</button>
     </p>
 </form>
 
-
-<?php
